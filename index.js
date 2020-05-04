@@ -5,7 +5,7 @@ console.log('funguju!');
 // vytvoreni pole s ukoly
 let tasks = ['Vyprat prádlo', 'Uvařit oběd', 'Uplést pár ok v šátku', 'Jít s dětmi na hřiště', 'Vyžehlit roušky', 'Učit se JavaScript'];
 
-// aktualizace seznamu ukolu
+// aktualizace a zobrazeni seznamu ukolu
 const updateTasks = () => {
   const tasksElm = document.querySelector('.todo__tasks');
   tasksElm.innerHTML = '';
@@ -25,5 +25,6 @@ const addNewTask = () => {
   }
 }
 
+// potvrzeni tlacitkem a zobrazeni noveho ukolu na spod seznamu
 const button = document.querySelector('.btn-add');
 button.addEventListener('click', addNewTask);
